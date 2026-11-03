@@ -1,0 +1,36 @@
+{
+  "description": "Frozen five-DCML-composer raw harmony data for source reconstruction; public source files are not mirrored.",
+  "original_data_descriptor_doi": "10.1038/s41597-025-04976-z",
+  "original_data_archive_doi": "10.5281/zenodo.15150283",
+  "source_archive_sha256": "c8542ddeb85e9dc5989b79c37defea9effa1332fe2b094ba9604cfab265ff488",
+  "verified_files": 267,
+  "composer_corpora": [
+    {
+      "repo": "beethoven_piano_sonatas",
+      "commit": "ea7181bff88abc8713257234f7ec4033178c57a9",
+      "harmonies": 64
+    },
+    {
+      "repo": "cpe_bach_keyboard",
+      "commit": "4b3511eab12b5fbfc7aa5c75819ee02225430da8",
+      "harmonies": 66
+    },
+    {
+      "repo": "jc_bach_sonatas",
+      "commit": "ac9fd07905eb62c3d8cfbd96811491170a216232",
+      "harmonies": 29
+    },
+    {
+      "repo": "kozeluh_sonatas",
+      "commit": "23c1983a48809647af1a08d54b1fade39ec93995",
+      "harmonies": 49
+    },
+    {
+      "repo": "mozart_piano_sonatas",
+      "commit": "5337257a5318711e6302cfe85c3f1a6ade3c6271",
+      "harmonies": 54
+    }
+  ],
+  "caution": "Koželuch excluded from supervised model; data under third-party CC BY-NC-SA conditions; no event-row redistribution",
+  "reproduce": "python code/01_reproduce_from_zip.py --data-zip five_corpora.zip --out ./reproduction"
+}
